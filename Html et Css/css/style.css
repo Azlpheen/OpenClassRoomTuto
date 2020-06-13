@@ -1,0 +1,237 @@
+h1{
+    color: blueviolet;
+}
+
+/* ceci est un commentaire et ne s'applique pas au style de la page*/
+
+p {
+    font-weight: bold;
+}
+
+/*la virgule permet de mettre plusieurs balise à changer avec le même code css, ici le h1 et le p*/
+h1, p{
+    font-size: 1.2em;
+}
+
+/*la transparence peut se faire avec RGBA la quatrieme valeur indique la transparence*/
+.introduction{
+    color: rgba(255,0,0, 0.6);
+
+}
+
+#introduction{
+    color: darkslategray;
+}
+
+/* on peut utiliser l'étoile "*" pour référencer toutes les balises de la page */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*on peut cibler un paragraphe qui suit un h1*/
+
+h1 + p{
+    text-align: center;
+}
+
+/*on peut cibler tout les "em" qui se trouve dans les h1 en faisant h1 (espace) em*/
+/*la taille du texte avec l'unité "em" permet de s'ajuster suivant les écrans ( elle est relative) et n'est pas figé comme pour le pixel*/
+
+h1 em{
+    font-size: 1.5em;
+}
+
+/*pour la police on va utiliser la propriété "font-family"*/
+
+@font-face {
+    font-family: 'ambleregular';    
+    src: url('fonts/Amble-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+p{
+    font-family: 'ambleregular', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    /*text-decoration: underline;*/
+    /*text-decoration: overline;*/
+    /*text-decoration: line-through;*/
+}
+
+.Bienvenue{
+font-size: 1.8em;
+}
+
+/*le texte entoure l'image, opacity pour la transparence (valeur comprise en entre 0 et 1)*/
+.flottant{
+    float: right ;
+    opacity: 0.6;
+}
+
+/*on annule le flottement à droite, pour le .para*/
+.para{
+    clear: right;
+}
+
+/* Les  principales couleurs en anglais*/
+
+.couleurs{
+    text-align: center;
+}
+
+.couleurWhite{
+    color: white;
+    border: 3px red solid;
+    background-color: black;
+    border-radius: 20px / 10px;
+    /*pour ajouter de l'ombre sur la bordure*/
+    box-shadow: 6px 6px 12px maroon; /* 1ere valeur pour le décalage horizontale de l'ombre, la 2em valeur pour le décalage verticale de l'ombre, la 3em valeur pour l'adoucissement du dégradé et la 4em valeur pour la couleur de l'ombre*/
+}
+
+.couleurSilver{
+    color: silver;
+    /*pour ajouter de l'ombre directement sur le texte*/
+    text-shadow: 6px 6px 12px blue;
+}
+
+.couleurGray{
+    color: gray;
+}
+
+.couleurBlack{
+    color: black;
+}
+
+.couleurRed{
+    color: red;
+}
+
+.couleurMaroon{
+    color: maroon;
+}
+
+.couleurLime{
+    color: lime;
+}
+
+.couleurGreen{
+    color: green;
+}
+
+.couleurYellow{
+    color: yellow;
+}
+
+.couleurOlive{
+    color: olive;
+}
+
+.couleurBlue{
+    color: blue;
+}
+
+.couleurNavy{
+    color: navy;
+}
+
+.couleurFuchsia{
+    color: fuchsia;
+}
+
+.couleurPurple{
+    color: purple;
+}
+
+.couleurAqua{
+    color: aqua;
+}
+
+.couleurTeal{
+    color: teal;
+}
+
+/*La couleur du fond*/
+
+h1{
+    background-image: url("../Images/Fond.jpg");
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+/*Modification du bouton pour aller à la page couleurs*/
+.couleurBtn{
+    color: mediumseagreen;
+    background-color: moccasin;
+    border-radius: 20px;
+    font-size: 2em;
+}
+
+.couleurA{
+    text-align: center;
+}
+
+/*Modification du bouton pour aller à la page des bordures*/
+.borduresBtn{
+    color: mediumseagreen;
+    background-color: moccasin;
+    border-radius: 20px;
+    font-size: 2em;
+}
+
+.borduresA{
+    text-align: center;
+}
+
+/*Positionnement de l'image des bordures*/
+.ImgBordure{
+    text-align: center;
+    border: 4px orangered outset;
+    box-shadow: 6px 6px 6px palevioletred;
+}
+
+.bordures{
+    text-align: center;
+    font-size: 2em;
+}
+
+/*Modification du bouton pour aller sur la page Apparence*/
+.apparenceBtn{
+    color: saddlebrown;
+    background-color: seagreen;
+    border-radius: 20px;
+    font-size: 4em;
+}
+
+.apparenceA{
+    text-align: center;
+}
+
+.apparence{
+    text-align: center;
+    font-size: 2em;
+}
+
+/*Modification de l'apparence du h2 dans la page apparence*/
+.hover:hover{
+    color: tomato;
+    background-color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 3px solid black;
+}
+
+/*modification d'apparence pour un lien actif, ici le bouton, il passera en rouge lors du clic ici*/
+.apparenceBtn:active{
+    color: red;
+}
+
+/*il existe un :focus qui permet de mettre en valeur un élément sélectionner, par exemple une case de formulaire*/
+/* :visited permet de voir quel lien a déjà été utilisé*/
+a:visited{
+    color: gray;
+}
+
