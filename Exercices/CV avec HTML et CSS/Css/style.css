@@ -1,0 +1,47 @@
+
+@font-face{ 
+	font-family:'berylium';
+    src: url('Fonts/BeryliumFonts/Berylium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: 'berylium';
+}
+
+
+#presentation{
+    text-align: center;
+    font-size: 2.5em;
+    border: 5px solid gray;
+    background-image: url("../Images/wallpaper-image-wallpapers-abstrait-gris-17-768x480.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5px;
+    margin: 5px;
+}
+
+h1{
+    color:orangered;
+}
+
+h2{
+    color: black;
+}
+
+h3{
+    box-shadow: 6px 8px 2px 1px rgba(55, 175, 135, 0.6);
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+#cv{
+    background: content-box linear-gradient(gray,white);
+}
+#contact{
+    border:2px dotted teal;
+}
