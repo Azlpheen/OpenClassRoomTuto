@@ -1,0 +1,37 @@
+h1{
+    width: 50%; /*largeur*/
+    height: ; /*hauteur*/
+    background-color: gray;
+}
+
+#exemple{
+    width: 50%;
+    min-width: 400px ;/*largeur minimale*/
+    min-height: ;/*hauteur minimale*/
+    max-width: ;/*largeur maximale*/
+    max-height: ;/*hauteur maximale*/
+    border: 2px solid black;
+
+    /*margin: 12px; /*marge extérieur du bloc*/
+    padding: 12px;/*marge intérieur du bloc, on aére l'élément et sa bordure*/
+
+    /* margin: 2px 0 3px 1px; ici la notation part du haut et tourne dans le sens des aiguilles d'une montre Haut Droit Bas Gauche*/
+
+    margin: auto; /* cela permet de centrer automatiquement un bloc sur la page, mais il faut aussi indiquer la largeur du bloc (width: ;)*/
+    height: 25px;
+}
+
+/*Si le texte dépasse du bloc il existe la propriété "overflow"*/
+
+#exemple{
+    overflow: hidden; /* pour couper la partie du texte*/
+    overflow: visible; /*pour laisser la partie visible du texte, c'est celle par défaut*/
+    overflow: scroll;/*pour afficher une barre de défilement */
+    overflow: auto;/* le navigateur décide de ce qui doit faire, certainement la valeur la plus utilisée*/
+}
+
+/*quand un mot est trop long, dans le cas d'une URL par exemple*/
+
+#exemple{
+    word-wrap: break-word;
+}
