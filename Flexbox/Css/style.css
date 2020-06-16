@@ -1,0 +1,104 @@
+#conteneur{
+    /*si on ajoute la propriété "display:flex;" au conteneur, les blocs se positionnent les un a la suite des autres sur une même ligne*/
+    display: flex;
+    /*on peut revenir à un affichage vertical avec "flex-direction: column;".*/
+    /*flex-direction: column;
+    /*avec "column reverse ou row reverse, l'ordre des éléments est inversé*/
+    /*flex-direction: column-reverse;
+    flex-direction: row-reverse;
+    /*avec "flex-wrap" les blocs peuvent allé à la ligne quand ils n'ont plus de place*/
+    flex-wrap: wrap;/*bouger la taille de l'affichage pour voir le résultat*/
+
+    /*on peut aligner HORIZONTALEMENT les blocs au sein de leur conteneur avec "justify-content"*/
+
+    /*justify-content: flex-start;/*les blocs sont alignés au debut, c'est la valeur par défaut*/
+    /*justify-content: flex-end;/*les blocs sont alignés à la fin*/
+    /*justify-content: center;/*les blocs sont centré*/
+    /*justify-content: space-between;/*ll y a de l'espace entre les blocs qui prennent la largeur*/
+    /*justify-content: space-around;/*Par rapport a space between, il y a aussi de l'espace au bord*/
+
+    /*on peut aligner VERTICALEMENT les blocs au sein de leur conteneur avec "align-items"*/
+
+    /*align-items: stretch;/*les éléments sont étirés sur tout l'axe, c'est la valeur par défaut*/
+    /*align-items: flex-start;/*les éléments sont alignés au debut*/
+    /*align-items: flex-end;/*les éléments sont alignés à la fin*/
+    /*align-items: center;/*les éléments sont alignés au centre*/
+    /*align-items: baseline;/*les éléments sont alignés sur une ligne de base, un peu comme flex-start*/
+
+    border: 2px solid #444;
+    height: 500px;
+
+
+    /*lorsque les éléments occupent plusieurs lignes, on peut indiquer comment ces lignes seront espacées avec "align-content"*/
+
+    align-content: flex-start;/*les éléments sont placés au début*/
+    align-content: flex-end;/*les éléments sont placés à la fin*/
+    align-content: center;/*les éléments sont placés au centre*/
+    align-content: space-between;/*les éléments sont séparés avec de l'espace entre eux*/
+    align-content: space-around;/*même chose qu'au dessus mais il y a de l'espace au debut et à la fin*/
+    align-content: stretch;/*les éléments s'étirent pour essayer d'occuper tout l'espace, c'est la valeur par défaut*/
+}
+
+/*La position des éléments peut changer avec "order"*/
+
+
+
+
+.element{
+    width: 150px;
+    height: 100px;
+    /*Pour centrer horizontalement et verticalement un bloc facilement on peut mettre une marge auto sur l'élément*/
+    /*margin: auto;*/
+}
+
+.element:nth-child(1){
+    background-color: yellow;
+    flex: 1; /*l'élément prendra tout l'espace restant*/
+}
+
+.element:nth-child(2){
+    background-color: chartreuse;
+    flex: 2;/*l'élément grossira 2x plus que le 1er*/
+}
+
+.element:nth-child(3){
+    background-color:green;
+}
+
+.element:nth-child(4){
+    background-color:teal;
+}
+
+.element:nth-child(5){
+    background-color:blue;
+}
+
+.element:nth-child(6){
+    background-color:violet;
+}
+
+.element:nth-child(7){
+    background-color:purple;
+}
+
+.element:nth-child(8){
+    background-color: magenta;
+}
+
+.element:nth-child(9){
+    background-color:red;
+}
+
+.element:nth-child(10){
+    background-color:orangered;
+}
+
+.element:nth-child(11){
+    background-color: orange;
+}
+
+.element:nth-child(12){
+    background-color:yellowgreen;
+}
+
+
